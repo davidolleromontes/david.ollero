@@ -14,6 +14,7 @@ export const routeNames = {
   Profile: 'Profile',
   Options: 'Options',
   Messages: 'Messages',
+  Repository: 'Repository'
   // Resume: 'Resume',
   // LogIn: 'LogIn',
   // SignUpCheckEmail: 'SignUpCheckEmail',

@@ -2,6 +2,8 @@ import { Color } from 'csstype';
 import React, { FC } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import CommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 
 import colors from '../../assets/colors';
 import dimensions from '../../assets/dimensions';
@@ -42,6 +44,10 @@ const Profile: FC<IProps> = props => {
       <View style={styles.vertical}>
         <Icon name="message" size={22} color={color} onPress={() => Navigation.navigate(routeNames.Messages)} />
         {routeName === mainTabNavigation.messages && <Dot style={[styles.dot, { backgroundColor: color }]} />}
+      </View>
+      <View style={styles.vertical}>
+        <CommunityIcon name="source-repository" size={22} color={color} onPress={() => Navigation.navigate(routeNames.Repository)} />
+        {routeName === mainTabNavigation.repository && <Dot style={[styles.dot, { backgroundColor: color }]} />}
       </View>
     </View>
   );

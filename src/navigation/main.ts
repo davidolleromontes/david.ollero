@@ -9,6 +9,7 @@ import Favorites from '../screens/favorites';
 import Me from '../screens/user';
 import Options from '../screens/options';
 import Messages from '../screens/messages';
+import Repository from '../screens/repository';
 import { routeNames } from '../utils/navigation';
 
 const screens = createStackNavigator(
@@ -18,7 +19,8 @@ const screens = createStackNavigator(
     Favorites,
     Me,
     Options,
-    Messages
+    Messages,
+    Repository,
   },
   { initialRouteName: routeNames.Employees, headerMode: 'none' }
 );
