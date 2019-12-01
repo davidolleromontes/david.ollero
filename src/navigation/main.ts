@@ -3,7 +3,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
 import mainTab from '../components/tabNav/main';
-import Employees from '../screens/contacts';
+import Employees from '../screens/employees';
 import Profile from '../screens/profile';
 import Favorites from '../screens/favorites';
 import Me from '../screens/user';

@@ -41,7 +41,7 @@ const Messages: FC = () => {
             case 'text':
                 Alert.alert(
                     t('messages.deleteMessage'),
-                    t('message.infoDeleteMessage'),
+                    t('messages.infoDeleteMessage'),
                     [
                         {
                             text: t('cancel'),

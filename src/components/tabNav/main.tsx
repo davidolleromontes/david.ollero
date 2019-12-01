@@ -1,14 +1,12 @@
 import { Color } from 'csstype';
 import React, { FC } from 'react';
 import { StyleSheet, View } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import CommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import colors from '../../assets/colors';
 import dimensions from '../../assets/dimensions';
 import { mainTabNavigation } from '../../assets/enums';
-import { getNavigationContext } from '../../utils/context';
 import Navigation, { routeNames } from '../../utils/navigation';
 import Dot from '../dots/dot';
 

@@ -3,13 +3,13 @@ import { Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 
 import colors from '../../assets/colors';
 import dimensions from '../../assets/dimensions';
-import { IContact } from '../../types/services';
+import { IEmployee } from '../../types/services';
 
-interface IProps extends IContact {
+interface IProps extends IEmployee {
     onPress: () => void;
 }
 
-const ContactsListItem: FC<IProps> = props => {
+const EmployeesListItem: FC<IProps> = props => {
     const { name, avatar, phone, onPress } = props;
 
     return (<TouchableHighlight
@@ -17,7 +17,7 @@ const ContactsListItem: FC<IProps> = props => {
         style={styles.container}
         onPress={onPress}
     >
-        <View style={styles.contactInfo}>
+        <View style={styles.employeeInfo}>
             <Image
                 style={styles.avatar}
                 source={{ uri: avatar }}
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     container: {
         paddingLeft: dimensions.space,
     },
-    contactInfo: {
+    employeeInfo: {
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
@@ -68,4 +68,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ContactsListItem;
+export default EmployeesListItem;

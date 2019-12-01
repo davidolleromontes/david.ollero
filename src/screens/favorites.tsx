@@ -43,7 +43,7 @@ const Favorites: FC = () => {
 
     return (
         <Container style={styles.container}>
-            <Header title={t('Favorites')} />
+            <Header title={t('favorites')} />
             <View style={{ flex: 1 }}>
                 {isLoading ? (
                     <Loader />
